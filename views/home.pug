@@ -1,0 +1,49 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content
+    section#introSection 
+      div Welcome to Raghu's Dance Academy
+      div.small Eat sleep Dance Repeat
+
+    section#missonSection
+      h2 Our Misson
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img
+            img(src="/static/img/l1.png")
+          div.card-container 
+            p This is the best dance academyof the universe  
+
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src="/static/img/l2.png")
+          div.card-container 
+            p This is the best dance academyof the universe
+
+      div.card
+        h3 Expert Teaching
+        div.card-box
+          div.card-img
+            img(src="/static/img/l3.png")
+          div.card-container 
+            p This is the best dance academyof the universe
+
+
+    section#sponcorsSection 
+      h2 Our Sponcors
+      div#sponsor
+        img(src="/static/img/apple.png", alt="Sponser image", class="spImage")
+        img(src="/static/img/googole logo6.png", alt="Sponser image", class="spImage")
+        img(src="/static/img/hp.png", alt="Sponser image", class="spImage")
+        img(src="/static/img/skype.png", alt="Sponser image", class="spImage")
+
